@@ -3,9 +3,9 @@ import "./App.css";
 import Axios from "axios";
 
 function App() {
-  const [id, setId] = useState(0);
-  const [registryDate, setRegistryDate] = useState(new Date());
-  const [lastActivityDate, setLastActivityDate] = useState(new Date());
+  const [id, setId] = useState([]);
+  const [registryDate, setRegistryDate] = useState([]);
+  const [lastActivityDate, setLastActivityDate] = useState([]);
 
   const addUser = () => {
     Axios.post("http://localhost:3001/create", {
@@ -37,7 +37,7 @@ function App() {
                 name=""
                 id=""
                 onChange={(event) => {
-                  setId(event.target.value);
+                  setId((id) => [...id, event.target.value]);
                 }}
               />
             </td>
@@ -45,7 +45,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setRegistryDate(event.target.value);
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -53,7 +56,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setLastActivityDate(event.target.value);
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -66,7 +72,7 @@ function App() {
                 name=""
                 id=""
                 onChange={(event) => {
-                  setId(event.target.value);
+                  setId((id) => [...id, event.target.value]);
                 }}
               />
             </td>
@@ -74,7 +80,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setRegistryDate(event.target.value);
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -82,7 +91,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setLastActivityDate(event.target.value);
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -95,7 +107,7 @@ function App() {
                 name=""
                 id=""
                 onChange={(event) => {
-                  setId(event.target.value);
+                  setId((id) => [...id, event.target.value]);
                 }}
               />
             </td>
@@ -103,7 +115,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setRegistryDate(event.target.value);
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -111,7 +126,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setLastActivityDate(event.target.value);
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -124,7 +142,7 @@ function App() {
                 name=""
                 id=""
                 onChange={(event) => {
-                  setId(event.target.value);
+                  setId((id) => [...id, event.target.value]);
                 }}
               />
             </td>
@@ -132,7 +150,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setRegistryDate(event.target.value);
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -140,7 +161,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setLastActivityDate(event.target.value);
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -153,7 +177,7 @@ function App() {
                 name=""
                 id=""
                 onChange={(event) => {
-                  setId(event.target.value);
+                  setId((id) => [...id, event.target.value]);
                 }}
               />
             </td>
@@ -161,7 +185,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setRegistryDate(event.target.value);
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
@@ -169,7 +196,10 @@ function App() {
               <input
                 type="date"
                 onChange={(event) => {
-                  setLastActivityDate(event.target.value);
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
                 }}
               />
             </td>
