@@ -10,8 +10,8 @@ function App() {
   const addUser = () => {
     Axios.post("http://localhost:3001/create", {
       id: id,
-      registryDate: registryDate,
-      lastActivityDate: lastActivityDate,
+      registry_date: registryDate,
+      last_activity_date: lastActivityDate,
     }).then(() => {
       console.log("axios post success");
     });
