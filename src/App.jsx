@@ -36,7 +36,7 @@ function App() {
                 min="0"
                 name=""
                 id=""
-                onChange={(event) => {
+                onBlur={(event) => {
                   setId((id) => [...id, event.target.value]);
                 }}
               />
@@ -44,7 +44,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setRegistryDate((registryDate) => [
                     ...registryDate,
                     event.target.value,
@@ -55,7 +55,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setLastActivityDate((lastActivityDate) => [
                     ...lastActivityDate,
                     event.target.value,
@@ -71,7 +71,7 @@ function App() {
                 min="0"
                 name=""
                 id=""
-                onChange={(event) => {
+                onBlur={(event) => {
                   setId((id) => [...id, event.target.value]);
                 }}
               />
@@ -79,7 +79,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setRegistryDate((registryDate) => [
                     ...registryDate,
                     event.target.value,
@@ -90,7 +90,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setLastActivityDate((lastActivityDate) => [
                     ...lastActivityDate,
                     event.target.value,
@@ -106,7 +106,7 @@ function App() {
                 min="0"
                 name=""
                 id=""
-                onChange={(event) => {
+                onBlur={(event) => {
                   setId((id) => [...id, event.target.value]);
                 }}
               />
@@ -114,7 +114,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setRegistryDate((registryDate) => [
                     ...registryDate,
                     event.target.value,
@@ -125,7 +125,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setLastActivityDate((lastActivityDate) => [
                     ...lastActivityDate,
                     event.target.value,
@@ -141,7 +141,7 @@ function App() {
                 min="0"
                 name=""
                 id=""
-                onChange={(event) => {
+                onBlur={(event) => {
                   setId((id) => [...id, event.target.value]);
                 }}
               />
@@ -149,7 +149,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setRegistryDate((registryDate) => [
                     ...registryDate,
                     event.target.value,
@@ -160,7 +160,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setLastActivityDate((lastActivityDate) => [
                     ...lastActivityDate,
                     event.target.value,
@@ -176,7 +176,7 @@ function App() {
                 min="0"
                 name=""
                 id=""
-                onChange={(event) => {
+                onBlur={(event) => {
                   setId((id) => [...id, event.target.value]);
                 }}
               />
@@ -184,7 +184,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setRegistryDate((registryDate) => [
                     ...registryDate,
                     event.target.value,
@@ -195,7 +195,7 @@ function App() {
             <td>
               <input
                 type="date"
-                onChange={(event) => {
+                onBlur={(event) => {
                   setLastActivityDate((lastActivityDate) => [
                     ...lastActivityDate,
                     event.target.value,
