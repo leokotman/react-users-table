@@ -16,7 +16,6 @@ function App() {
     })
       .then(() => {
         console.log("axios post success");
-        document.getElementById("#users").innerHTML = "users infos";
       })
       .catch(() => {
         alert(
@@ -27,6 +26,7 @@ function App() {
   const getUsers = () => {
     Axios.get("http://localhost:3001/users").then((response) => {
       console.log(response);
+      setUsersList(response.data);
     });
   };
 
@@ -122,7 +122,17 @@ function App() {
       </button>
       <section>
         <h1>Users:</h1>
-        <p id="users"></p>
+        <p id="users">
+          {usersList.map((value, key) => {
+            return (
+              <div>
+                <span>UserID: {value.id}</span>
+                <span>Date of Registration: {value.registry_date}</span>
+                <span>Last activity date: {value.last_activity_date}</span>
+              </div>
+            );
+          })}
+        </p>
       </section>
     </div>
   );
