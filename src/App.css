@@ -2,10 +2,24 @@
   text-align: center;
   width: 80vw;
   margin: 0 auto;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #5D6D97;
 }
 
 .App table {
   margin: 0 auto;
   padding: 10vw 0;
   box-sizing: border-box;
+}
+table th {
+  font-weight: 400;
+}
+table td {
+  font-weight: 300;
+}
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }

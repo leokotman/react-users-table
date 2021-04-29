@@ -159,6 +159,111 @@ function App() {
               />
             </td>
           </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                min="0"
+                name=""
+                id=""
+                onBlur={(event) => {
+                  setId((id) => [...id, event.target.value]);
+                }}
+              />
+            </td>
+            <td>
+              <input
+                type="date"
+                onBlur={(event) => {
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
+                }}
+              />
+            </td>
+            <td>
+              <input
+                type="date"
+                onBlur={(event) => {
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
+                }}
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                min="0"
+                name=""
+                id=""
+                onBlur={(event) => {
+                  setId((id) => [...id, event.target.value]);
+                }}
+              />
+            </td>
+            <td>
+              <input
+                type="date"
+                onBlur={(event) => {
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
+                }}
+              />
+            </td>
+            <td>
+              <input
+                type="date"
+                onBlur={(event) => {
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
+                }}
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                min="0"
+                name=""
+                id=""
+                onBlur={(event) => {
+                  setId((id) => [...id, event.target.value]);
+                }}
+              />
+            </td>
+            <td>
+              <input
+                type="date"
+                onBlur={(event) => {
+                  setRegistryDate((registryDate) => [
+                    ...registryDate,
+                    event.target.value,
+                  ]);
+                }}
+              />
+            </td>
+            <td>
+              <input
+                type="date"
+                onBlur={(event) => {
+                  setLastActivityDate((lastActivityDate) => [
+                    ...lastActivityDate,
+                    event.target.value,
+                  ]);
+                }}
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
       <button type="submit" onClick={addUser}>
@@ -168,7 +273,7 @@ function App() {
         Show users
       </button>
       <section>
-        <h1>Users:</h1>
+        <h1>Users in database:</h1>
         {usersList.map((value, key) => {
           return (
             <p id="users">
