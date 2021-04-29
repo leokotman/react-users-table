@@ -10,7 +10,7 @@ function App() {
   let rollingRetentionShown = false;
 
   const addUser = () => {
-    Axios.post("http://localhost:3001/create", {
+    Axios.post("https://react-table-sql.herokuapp.com/api/create", {
       id: id,
       registry_date: registryDate,
       last_activity_date: lastActivityDate,
@@ -33,10 +33,12 @@ function App() {
       });
   };
   const getUsers = () => {
-    Axios.get("http://localhost:3001/users").then((response) => {
-      console.log(response);
-      setUsersList(response.data);
-    });
+    Axios.get("https://react-table-sql.herokuapp.com/api/users").then(
+      (response) => {
+        console.log(response);
+        setUsersList(response.data);
+      }
+    );
   };
   let usersObjectsArr = usersList.map((value, key) => {
     return {
